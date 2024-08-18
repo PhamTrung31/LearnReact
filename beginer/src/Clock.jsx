@@ -30,12 +30,14 @@ export default class Clock extends React.Component {
       console.log('Value in Input: ', value)
     }
 
-    fetchApi().then((res) =>
-      this.setState((prevState) => ({
-        ...prevState,
-        lists: res
-      }))
-    )
+    if (this.state.lists.length === 0) {
+      fetchApi().then((res) =>
+        this.setState((prevState) => ({
+          ...prevState,
+          lists: res
+        }))
+      )
+    }
   }
 
   getTime = () => {

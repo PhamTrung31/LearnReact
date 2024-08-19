@@ -2,12 +2,13 @@ import React from 'react'
 
 // class BareInput extends React.Component {
 //   render() {
-//     return <input {...this.props} autoFocus={false} />
+//     const { type, ...rest } = this.props
+//     return <input {...rest} />
 //   }
 // }
 
-function BareInput(props) {
-  return <input {...props} autoFocus={false} />
+function BareInput({ type, ...rest }) {
+  return <input {...rest} />
 }
 
 export default BareInput

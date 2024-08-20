@@ -13,8 +13,9 @@ function App() {
        {visible && <Clock />} */}
       <LayOut>
         <h1>This is layout</h1>
+        <BareInput type='text' value='100' autoFocus />{' '}
+        {/* //missing onChange when using functional. will learn later */}
       </LayOut>
-      <BareInput type='text' value='100' autoFocus /> {/* //missing onChange when using functional. will learn later */}
     </div>
   )
 }

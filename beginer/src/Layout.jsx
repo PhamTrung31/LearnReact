@@ -7,7 +7,7 @@ import ProtoType from 'prop-types'
 //   }
 // }
 
-function LayOut(children) {
+function LayOut({ children }) {
   return <div className='layout'>{children}</div>
 }
 

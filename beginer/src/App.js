@@ -4,20 +4,14 @@ import Clock from './Clock'
 import BareInput from './BareInput'
 import LayOut from './Layout'
 import BareButton from './BareButton'
+import LoginControl from './LoginControl'
 
 function App() {
   const [visible, setVisible] = useState(true)
 
   return (
     <div className='App'>
-      {/* <button onClick={() => setVisible(false)}>Hide Clock component</button>
-       {visible && <Clock />} */}
-      <LayOut>
-        <h1>This is layout</h1>
-        <BareInput type='text' value='100' autoFocus />{' '}
-        {/* //missing onChange when using functional. will learn later */}
-        <BareButton />
-      </LayOut>
+      <LoginControl isLoggedIn={false} />
     </div>
   )
 }

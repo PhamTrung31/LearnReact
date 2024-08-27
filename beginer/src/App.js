@@ -7,6 +7,7 @@ import BareButton from './BareButton'
 import LoginControl from './LoginControl'
 import CorrectlyState from './CorrectlyState'
 import ProductList from './ProductList/ProductList'
+import Form from './Form/Form'
 
 function App() {
   // const [visible, setVisible] = useState(true)
@@ -15,7 +16,8 @@ function App() {
     <div className='App'>
       {/* <LoginControl isLoggedIn={false} /> */}
       {/* <CorrectlyState /> */}
-      <ProductList />
+      {/* <ProductList /> */}
+      <Form />
     </div>
   )
 }
